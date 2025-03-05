@@ -1,4 +1,4 @@
-let API_KEY = "API-KEY
+let API_KEY = "API-KEY";
 
 console.log("[INFO] Background script loaded and ready!");
 
