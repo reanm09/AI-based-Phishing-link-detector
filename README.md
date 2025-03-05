@@ -8,9 +8,8 @@ A **Chrome Extension** that helps detect phishing websites using **Google Safe B
 👉 **Google Safe Browsing Check** – Detects dangerous sites instantly  
 👉 **PhishTank Database Lookup** – Identifies known phishing sites  
 👉 **Machine Learning Model** – Predicts suspicious websites using AI  
-👉 **One-Click Scan** – Quick and easy website verification  
 👉 **Lightweight & Fast** – Minimal impact on browser performance  
-
+👉 **Simple UI** - One-click scanning with an intuitive interface.
 ---
 
 ## 🖼️ Screenshots  
@@ -26,13 +25,24 @@ A **Chrome Extension** that helps detect phishing websites using **Google Safe B
    ```sh
    git clone https://github.com/reanm09/AI-based-Phishing-link-detector.git
    ```
-2. Open **Google Chrome** and navigate to:  
+2. **Setting Up Google API Key**
+   The extension requires a Google Safe Browsing API key to function correctly.
+   Get your API key:
+   Go to Google Cloud Console
+   Create a new project and enable the Safe Browsing API
+   Generate an API key
+   Add your API key to the extension:
+   Open background.js
+   Find this line:
+   let API_KEY = "API_KEY";
+   Replace API_KEY with your actual API key
+3. Open **Google Chrome** and navigate to:  
    ```
    chrome://extensions/
    ```
-3. **Enable Developer Mode** (Toggle in the top-right corner)  
-4. Click **"Load unpacked"** and select the downloaded folder  
-5. The extension is now ready to use!  
+4. **Enable Developer Mode** (Toggle in the top-right corner)  
+5. Click **"Load unpacked"** and select the downloaded folder  
+6. The extension is now ready to use!  
 
 ---
 
