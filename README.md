@@ -60,8 +60,7 @@ A **Chrome Extension** that helps detect phishing websites using **Google Safe B
 - **JavaScript (Chrome Extension API)**  
 - **Google Safe Browsing API**  
 - **PhishTank Database**  
-- **TensorFlow.js (Machine Learning Model)**  
-- **ONNX Runtime (Model Optimization)**  
+- **Extremely Simple and minimalistic neural network developed by me**  
 
 ---
 
