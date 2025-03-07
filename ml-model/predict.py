@@ -5,7 +5,7 @@ import whois
 import datetime
 from urllib.parse import urlparse
 
-API_KEY = "AIzaSyDPCYyUf-a0toU0GwTSimRK3ZZpBCnmySk"
+API_KEY = "YOUR-API"
 API_URL = "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=" + API_KEY
 
 model = joblib.load("ml-model/model.pkl")
