@@ -1,57 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    background: #f8f8f8;
-    width: 250px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #000000, #1a0000);
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 8px 32px rgba(255, 0, 0, 0.1);
 }
 
-h3 {
-    color: #333;
-    margin-bottom: 15px;
-    font-size: 18px;
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 button {
-    background: #ff4b4b; 
+    background: #000000;
     color: white;
     font-size: 16px;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 8px;
+    padding: 12px 25px;
+    border: 2px solid #ff0000;
+    border-radius: 12px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     width: 100%;
-    font-weight: bold;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.2);
 }
 
 button:hover {
-    background: #d94444; 
-    transform: scale(1.05);
+    background: #ff0000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 0, 0, 0.4);
 }
 
 button:disabled {
-    background: #ccc;
+    background: #333333;
+    border-color: #666666;
     cursor: not-allowed;
+    box-shadow: none;
 }
 
 #result {
-    font-size: 14px;
-    font-weight: bold;
-    padding: 10px;
-    background: #fff;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    margin-top: 20px;
+    color: #fff;
 }
 
 .loading {
-    width: 14px;
-    height: 14px;
-    border: 2px solid white;
-    border-top: 2px solid #ff4b4b;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid #ff0000;
     border-radius: 50%;
     display: inline-block;
     animation: spin 1s linear infinite;
@@ -61,4 +84,13 @@ button:disabled {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.popup-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
